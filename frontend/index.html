@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MCP Filesystem Editor</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      color: #333;
+    }
+
+    input[type="file"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>MCP Filesystem Editor</h1>
+
+    <h2>Upload Folder (ZIP)</h2>
+    <input type="file" id="folderInput" />
+    <button onclick="upload()">Upload</button>
+
+    <h2>Edit Files with Prompt</h2>
+    <input type="text" id="prompt" placeholder="e.g., Add TODO to top of JS files" />
+    <button onclick="edit()">Edit</button>
+
+    <h2>Delete File</h2>
+    <input type="text" id="deleteFile" placeholder="e.g., script.js" />
+    <button onclick="deleteFile()">Delete</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

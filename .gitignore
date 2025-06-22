@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# FastAPI uploads folder
+uploads/
+
+# ZIP files
+*.zip
+
+# VS Code settings (optional)
+.vscode/
