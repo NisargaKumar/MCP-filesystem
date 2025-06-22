@@ -43,6 +43,7 @@ cd mcp filesystem
 ```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 ### 3. Install Requirements
 
