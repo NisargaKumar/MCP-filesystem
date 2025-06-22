@@ -34,8 +34,8 @@ mcp-filesystem/
 ### 1. Clone the Repo
 
 ```bash
-git clone <your-repo-url>
-cd mcp-filesystem
+git clone https://github.com/NisargaKumar/MCP-filesystem
+cd mcp filesystem
 ```
 
 ### 2. Set Up Virtual Environment (Optional but recommended)
